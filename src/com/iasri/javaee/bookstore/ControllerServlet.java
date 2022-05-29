@@ -20,7 +20,9 @@ public class ControllerServlet extends HttpServlet {
 	private BookDAO bookDAO;
 	
 	public void init(){
-		String jdbcURL="jdbc:sqlserver://localhost:1433;databaseName=pgs_ivri;authenticationScheme=NTLM;integratedSecurity=false;encrypt=false;";//"jdbc:sqlserver://localhost:1433;databaseName=Bookstore;encrypt=false;";//getServletContext().getInitParameter("jdbcURL");
+		String jdbcURL="jdbc:sqlserver://localhost:1433;databaseName=#####;authenticationScheme=NTLM;integratedSecurity=false;encrypt=false;";
+		//"jdbc:sqlserver://localhost:1433;databaseName=#####;encrypt=false;";
+		//getServletContext().getInitParameter("jdbcURL");
 		String jdbcUsername="sunone";//getServletContext().getInitParameter("jdbcUsername");
 		String jdbcPassword="dean2head$";//getServletContext().getInitParameter("jdbcPassword");
 		bookDAO = new BookDAO(jdbcURL, jdbcUsername, jdbcPassword);
