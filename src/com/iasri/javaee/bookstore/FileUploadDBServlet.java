@@ -24,8 +24,8 @@ import javax.servlet.http.Part;
 public class FileUploadDBServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private String dbURL="jdbc:sqlserver://localhost:1433;databaseName=#####;authenticationScheme=NTLM;integratedSecurity=false;encrypt=false;";
-    private String dbUsename="sunone";
-    private String dbPassword="dean2head$";
+    private String dbUsename="####";
+    private String dbPassword="#####";
     /**
      * @see HttpServlet#HttpServlet()
      */
